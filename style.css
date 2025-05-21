@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+canvas{
+    background-color: #cdcdcd;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#preview{
+    width: 20vw;
+    height: auto;
+    margin-left: 10vw;
+}
+
+#output{
+    width: 30vw;
+    height: auto;
+    margin-right: 10%;
+}
+
+#button{
+    width: 10vw;
+    height: 3vw;
+    margin-top: 5vh;
+}
+
+.center{
+    text-align: center;
+}
+
+.box-label{
+    margin-right: 30vw;
+}

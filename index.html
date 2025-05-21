@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label><input value="1" type="radio" name="image" checked>1_.jpeg</label>
+        <label><input value="2" type="radio" name="image">2_.jpeg</label>
+        <label><input value="3" type="radio" name="image">3_.jpeg</label>
+    </div>
+    <div class="center">
+        <canvas id="input" style="width: 80vw; height: auto;"></canvas>
+    </div>
+    <div class="flex">
+        <div class="flex-column">
+            <label class="box-label"><input id="checkbox" type="checkbox" checked>プレビューON or OFF</label>
+            <canvas id="preview" width="1920px" height="1920px"></canvas>
+        </div>
+            <canvas id="output" width="1920px" height="1920px"></canvas>
+    </div>
+    <div class="center">
+        <button id="button">出力</button>
+    </div>
+    
+    <script src="https://cdn.nfolio.one/simprim.min.js" integrity="5b29a8c62acb050ae10890b2625e30760a3c6b7f2f69cd43ecdf0c01fb5fefd3" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
