@@ -10,9 +10,10 @@ const radios = document.getElementsByName("image");
 const reader = new FileReader();
 
 const img = new Image();
+let simprim;
 
 img.onload = () => {
-    const simprim = new SimPrim(inputCvs);
+    simprim = new SimPrim(inputCvs);
     simprim.init(img, "70vh", "auto");
     simprim.dragDetection(previewCvs);
     simprim.sizeChange();
