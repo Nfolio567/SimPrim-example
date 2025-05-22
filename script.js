@@ -6,12 +6,13 @@ const checkbox = document.getElementById("checkbox");
 const button = document.getElementById("button");
 const radios = document.getElementsByName("image");
 
-const simprim = new SimPrim(inputCvs);
+
 const reader = new FileReader();
 
 const img = new Image();
 
 img.onload = () => {
+    const simprim = new SimPrim(inputCvs);
     simprim.init(img, "70vh", "auto");
     simprim.dragDetection(previewCvs);
     simprim.sizeChange();
