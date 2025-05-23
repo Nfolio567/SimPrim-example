@@ -38,6 +38,11 @@ canvas{
     margin-top: 5vh;
 }
 
+#input {
+    width: 80vw;
+    height: auto;
+}
+
 .center{
     text-align: center;
 }
