@@ -1,10 +1,10 @@
 const inputCvs = document.getElementById("input");
 const outputCvs = document.getElementById("output");
 const previewCvs = document.getElementById("preview");
-const inputFile = document.getElementById("inputFile");
 const checkbox = document.getElementById("checkbox");
 const button = document.getElementById("button");
 const radios = document.getElementsByName("image");
+const version = document.getElementById("version");
 
 
 const reader = new FileReader();
@@ -17,10 +17,11 @@ img.onload = () => {
     simprim.init(img, "70vh", "auto");
     simprim.dragDetection(previewCvs);
     simprim.sizeChange();
+    version.innerText = simprim.VERSION;
 };
 
 
-checkbox.addEventListener("input", (e) => {
+checkbox.addEventListener("input", () => {
     if(checkbox.checked){
         previewCvs.style.display = "block";
     }else{
