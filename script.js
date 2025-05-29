@@ -6,15 +6,13 @@ const button = document.getElementById("button");
 const radios = document.getElementsByName("image");
 const version = document.getElementById("version");
 
-
 const reader = new FileReader();
 
 const img = new Image();
-let simprim;
+const simprim = new SimPrim();
 
 img.onload = () => {
-    simprim = new SimPrim(inputCvs);
-    simprim.init(img, "70vh", "auto");
+    simprim.init(inputCvs, img, "70vh", "auto");
     simprim.dragDetection(previewCvs);
     simprim.sizeChange();
     version.innerText = simprim.VERSION;
